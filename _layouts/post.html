@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title | append:" - CivEx" }}</title>
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/blog.css">
+</head>
+<body>
+    {% include header.html %}
+    <div class="body">
+        <div class="wrap">
+            <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+            <p class="date">{{ page.date }}</p>
+            {{ content }}
+            <a href="{{ page.comments }}">discuss on reddit</a>
+        </div>
+    </div>
+</body>
+</html>
