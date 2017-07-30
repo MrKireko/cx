@@ -5,10 +5,9 @@
 $prime: #d3291f; //primary color
 $prime2: #9e1f17; //darker primary color, used for hover effect, click effects, etc
 $secondary: #ff8f00;
-$secondary2: #df7d00;
+$secondary2: #bf6b00;
 $tertiary: #8f00ff;
 $tertiary2: #6b00bf;
-$number4: #ff8f00;
 
 @mixin border-box() {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -163,6 +162,10 @@ table.heroT {
         height: 100%;
         cursor: pointer;
         
+        &.links {
+            display: none;
+        }
+        
         &.donate {
             background-color: $secondary;
             border-top: 1px solid $secondary;
@@ -210,6 +213,7 @@ table.heroT {
     
     h1 {
         padding: .35em 0 .05em 0;
+        // font size becomes 4em, because browser h1 default size is 2em and now we're assigning it 2em again. 2*2=4
     }
     
     p, li {
@@ -248,12 +252,15 @@ table.heroT {
     }
 }
 
-@media only screen and (max-width: 1420px) {  /*collapse menu at width 1420px or smaller (that's when menu breaks)*/
+@media only screen and (max-width: 1420px) {  //collapse menu at width 1420px or smaller (that's when menu breaks)
     .menu {
         display: block;
         .menuL {
             display: block;
             text-align: center;
+        }
+        a.links {
+            display: block;
         }
     }
     .hero {
@@ -272,6 +279,9 @@ table.heroT {
             font-size: 2em;
             margin-bottom: 1em;
         }
+    }
+    .body {
+        font-size: 1.5em; //this also sets h1 sizes to 3em, bc 2*1.5=3
     }
 }
 
