@@ -54,7 +54,7 @@ a {
     box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.15);
     background-color: #7a98cc;
     background-image: url(hero.jpg);
-    background-position: -50%;
+//    background-position: -50%;
     background-size: cover;
     width: 100%;
     height: 40em;
@@ -100,6 +100,7 @@ table.heroT {
 //        border: 1px solid red;
         width: 50%;
         padding: 1.5em 0;
+//        overflow: hidden;
         
         a {
             display: flex;
@@ -109,6 +110,7 @@ table.heroT {
             color: #fff;
             text-decoration: none;
             background-color: $prime;
+            overflow: visible;
             width: 90%;
             height: 9em;
             line-height: 2.25em;
@@ -142,7 +144,7 @@ table.heroT {
 
 .menu {
     background-color: $prime;
-    height: 4em;
+    min-height: 4em;
     z-index: 2;
     width: 100%;
     display: flex;
@@ -150,6 +152,7 @@ table.heroT {
     align-items: center; /* align vertical */
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
     position: relative;
+    overflow: visible;
     
     a {
         color: white;
@@ -161,17 +164,25 @@ table.heroT {
         
         &.donate {
             background-color: $secondary;
+            border-top: 1px solid $secondary;
+            border-bottom: 1px solid $secondary;
             
             &:hover {
                 background-color: $secondary2;
+                border-top: 1px solid $secondary2;
+                border-bottom: 1px solid $secondary2;
             }
         }
         
         &.blog {
             background-color: $tertiary;
+            border-top: 1px solid $tertiary;
+            border-bottom: 1px solid $tertiary;
             
             &:hover {
                 background-color: $tertiary2;
+                border-top: 1px solid $tertiary2;
+                border-bottom: 1px solid $tertiary2;
             }
         }
         
@@ -189,7 +200,8 @@ table.heroT {
     margin: 0;
     
     .wrap {
-        width: 60%;
+        width: 70%;
+        max-width:33em;
         text-align: left;
         display: inline-block;
         padding-bottom: 2.5em;
@@ -232,6 +244,25 @@ table.heroT {
     
     &:active {
         background-color: $secondary2;
+    }
+}
+
+@media only screen and (max-width: 1420px) {  /*collapse menu at width 1420px or smaller (that's when menu breaks)*/
+    .menu {
+        display: block;
+        .menuL {
+            display: block;
+            text-align: center;
+        }
+    }
+    .hero {
+        height: auto;
+        .heroT {
+            display: none;
+        }
+        h2.herotxt {
+            margin-bottom: 1em;
+        }
     }
 }
 

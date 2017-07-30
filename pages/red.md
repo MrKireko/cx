@@ -29,3 +29,9 @@ To help you get started, we made a full Beginners Guide [here](#) [this links to
 
 **The staff has the right to remove any player from the server,** temporarily and/or permanently. If you are unsure about whether something is allowed, ask us first!
 For more info on the rules, [click here](https://www.reddit.com/r/CivEx/wiki/server_rules).
+
+# Links
+Teamspeak 3 Server: [ts.vanillacraft.net](ts3server://ts.vanillacraft.net/?nickname=Anonymous)  
+Our Subreddit: [civex.reddit.com](https://civex.reddit.com/)  
+Banned? Bug report? [Send a ticket!](https://vanillacraft.net/ticket/)  
+Got a question? Want a flair? [Send us a modmail!](https://www.reddit.com/message/compose?to=%2Fr%2FCivEx)  
